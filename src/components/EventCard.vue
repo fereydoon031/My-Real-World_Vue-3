@@ -1,10 +1,16 @@
 <template>
-  <div class="card">
-    <img class="image" src="../assets/img_avatar.png" />
-    <div class="container">
-      <h4>{{ event.title }}</h4>
+  <router-link
+    class="event-link"
+    :to="{ name: 'EventDetails', params: { id: event.id } }"
+  >
+    <div class="card">
+      <div class="container" v-if="event">
+        <h4>{{ event.title }}</h4>
+        <span>{{ event.time }} on {{ event.date }}</span>
+        <p>{{ event.description }}</p>
+      </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -31,7 +37,7 @@ export default {
 }
 
 .card:hover {
-  box-shadow: 4px 13px 30px 1px rgba(48, 47, 47, 0.2);
+  box-shadow: 4px 13px 30px 1px rgba(85, 221, 131, 0.2);
 }
 
 .container {
@@ -40,5 +46,10 @@ export default {
 
 .image {
   height: 200px;
+}
+
+.event-link {
+  color: #2c3e50;
+  text-decoration: none;
 }
 </style>
