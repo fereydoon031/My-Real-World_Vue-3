@@ -2,17 +2,18 @@
   <div class="card">
     <img class="image" src="../assets/img_avatar.png" />
     <div class="container">
-      <h4><b>John Doe</b></h4>
-      <p>Architect & Engineer</p>
+      <h4>{{ event.title }}</h4>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "EventCard",
   props: {
-    msg: String,
+    event: {
+      type: Object,
+      required: true,
+    },
   },
 };
 </script>
