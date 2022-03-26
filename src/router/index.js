@@ -6,6 +6,7 @@ const routes = [
     path: "/",
     name: "home",
     component: HomeView,
+    props: (route) => ({ page: parseInt(route.query.page) || 1 }),
   },
   {
     path: "/event/:id",
