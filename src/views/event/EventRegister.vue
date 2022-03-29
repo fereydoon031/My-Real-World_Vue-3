@@ -1,10 +1,20 @@
 <template>
   <p>Register for the event</p>
+  <button @click="register()">Register Me</button>
 </template>
 
 <script>
 export default {
   props: ["event"],
+  methods: {
+    register() {
+      //call to API
+
+      this.$router.push({
+        name: "EventDetails",
+      });
+    },
+  },
 };
 </script>
 
