@@ -1,4 +1,6 @@
-# rwv
+# My Real World Vue 3
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ce3b1aba-2ad2-4567-bd3f-884ad0eb5f6e/deploy-status)](https://app.netlify.com/sites/my-real-world-vue3/deploys)
+
 ## Available online at [Netlify - My Real World Vue 3](https://my-real-world-vue3.netlify.app/).
 ## Project setup
 ```
